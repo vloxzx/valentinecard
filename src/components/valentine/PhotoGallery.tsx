@@ -25,18 +25,19 @@ const PhotoGallery = () => {
           Our Cherished Memories
         </h2>
 
-      <div className="grid grid-cols-2 md-grid-cols-3 gap-4">
-        {photos.map((photo, index) => (
-          <div key={index} className="aspect-[3/4] bg-white p-1.5 rounded-lg shadow-sm border border-[#8b1a1a]/20 transform hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full overflow-hidden rounded border border-gray-100">
-              <img
-                src={photo}
-                alt={`Memory ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
+        <div className="grid grid-cols-2 md-grid-cols-3 gap-4">
+          {photos.map((photo, index) => (
+            <div key={index} className="aspect-[3/4] bg-white p-1.5 rounded-lg shadow-sm border border-[#8b1a1a]/20 transform hover:scale-105 transition-transform duration-300">
+              <div className="w-full h-full overflow-hidden rounded border border-gray-100">
+                <img
+                  src={photo}
+                  alt={`Memory ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
